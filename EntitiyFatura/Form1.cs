@@ -28,28 +28,47 @@ namespace EntitiyFatura
         {
             Ilceler ilceler = new Ilceler();
             ilceler.Show();
-            this.Hide();
+        
         }
 
         private void urunEkleToolStripMenuItem_Click(object sender, EventArgs e)
         {
             UruEkrani u = new UruEkrani();
             u.Show();
-            this.Hide();
+       
         }
 
         private void birimEkleToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FormBirim b = new FormBirim();
             b.Show();
-            this.Show();
+          
         }
 
         private void musteriEkleToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Fmusteri m = new Fmusteri();
             m.Show();
-            this.Hide();
+           
+        }
+
+        private void yeniFaturaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FYeniFatura yf=new FYeniFatura();
+            yf.Show();
+            
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void faturaSorgulaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FaturaSorgulama fs=new FaturaSorgulama();
+            fs.Show();
+           
         }
     }
 }

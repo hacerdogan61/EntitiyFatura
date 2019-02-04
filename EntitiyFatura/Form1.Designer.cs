@@ -36,6 +36,8 @@
             this.ılEkleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ılceEkleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.faturaİslemleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.yeniFaturaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.faturaSorgulaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -66,43 +68,60 @@
             // musteriEkleToolStripMenuItem
             // 
             this.musteriEkleToolStripMenuItem.Name = "musteriEkleToolStripMenuItem";
-            this.musteriEkleToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.musteriEkleToolStripMenuItem.Size = new System.Drawing.Size(164, 26);
             this.musteriEkleToolStripMenuItem.Text = "Musteri Ekle";
             this.musteriEkleToolStripMenuItem.Click += new System.EventHandler(this.musteriEkleToolStripMenuItem_Click);
             // 
             // birimEkleToolStripMenuItem
             // 
             this.birimEkleToolStripMenuItem.Name = "birimEkleToolStripMenuItem";
-            this.birimEkleToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.birimEkleToolStripMenuItem.Size = new System.Drawing.Size(164, 26);
             this.birimEkleToolStripMenuItem.Text = "Birim Ekle";
             this.birimEkleToolStripMenuItem.Click += new System.EventHandler(this.birimEkleToolStripMenuItem_Click);
             // 
             // urunEkleToolStripMenuItem
             // 
             this.urunEkleToolStripMenuItem.Name = "urunEkleToolStripMenuItem";
-            this.urunEkleToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.urunEkleToolStripMenuItem.Size = new System.Drawing.Size(164, 26);
             this.urunEkleToolStripMenuItem.Text = "Urun Ekle";
             this.urunEkleToolStripMenuItem.Click += new System.EventHandler(this.urunEkleToolStripMenuItem_Click);
             // 
             // ılEkleToolStripMenuItem
             // 
             this.ılEkleToolStripMenuItem.Name = "ılEkleToolStripMenuItem";
-            this.ılEkleToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.ılEkleToolStripMenuItem.Size = new System.Drawing.Size(164, 26);
             this.ılEkleToolStripMenuItem.Text = "Il Ekle";
             this.ılEkleToolStripMenuItem.Click += new System.EventHandler(this.ılEkleToolStripMenuItem_Click);
             // 
             // ılceEkleToolStripMenuItem
             // 
             this.ılceEkleToolStripMenuItem.Name = "ılceEkleToolStripMenuItem";
-            this.ılceEkleToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.ılceEkleToolStripMenuItem.Size = new System.Drawing.Size(164, 26);
             this.ılceEkleToolStripMenuItem.Text = "Ilce Ekle";
             this.ılceEkleToolStripMenuItem.Click += new System.EventHandler(this.ılceEkleToolStripMenuItem_Click);
             // 
             // faturaİslemleriToolStripMenuItem
             // 
+            this.faturaİslemleriToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.yeniFaturaToolStripMenuItem,
+            this.faturaSorgulaToolStripMenuItem});
             this.faturaİslemleriToolStripMenuItem.Name = "faturaİslemleriToolStripMenuItem";
             this.faturaİslemleriToolStripMenuItem.Size = new System.Drawing.Size(121, 24);
             this.faturaİslemleriToolStripMenuItem.Text = "Fatura İslemleri";
+            // 
+            // yeniFaturaToolStripMenuItem
+            // 
+            this.yeniFaturaToolStripMenuItem.Name = "yeniFaturaToolStripMenuItem";
+            this.yeniFaturaToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.yeniFaturaToolStripMenuItem.Text = "Yeni Fatura";
+            this.yeniFaturaToolStripMenuItem.Click += new System.EventHandler(this.yeniFaturaToolStripMenuItem_Click);
+            // 
+            // faturaSorgulaToolStripMenuItem
+            // 
+            this.faturaSorgulaToolStripMenuItem.Name = "faturaSorgulaToolStripMenuItem";
+            this.faturaSorgulaToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.faturaSorgulaToolStripMenuItem.Text = "Fatura Sorgula";
+            this.faturaSorgulaToolStripMenuItem.Click += new System.EventHandler(this.faturaSorgulaToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -113,6 +132,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -130,6 +150,8 @@
         private System.Windows.Forms.ToolStripMenuItem ılEkleToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ılceEkleToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem faturaİslemleriToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem yeniFaturaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem faturaSorgulaToolStripMenuItem;
     }
 }
 

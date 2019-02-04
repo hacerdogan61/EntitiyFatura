@@ -111,7 +111,12 @@ namespace EntitiyFatura
         [Key]
         public int FaturaID { get; set; }
         public int MusteriID { get; set; }
+        public int IrsaliyeNo { get; set; }
         public DateTime FaturaTarihi { get; set; }
+        public DateTime OdemeTarihi
+        {
+            get; set;
+        }
         public virtual Musteri musteri { get; set; }
         public virtual ICollection<FaturaDetay > detay { get; set; }
     }
